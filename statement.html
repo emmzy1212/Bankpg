@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Statements & Documents - Chase Bank</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+        }
+
+        .header {
+            background-color: #004b87;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: white;
+        }
+        .header img {
+            width: 120px;
+        }
+        .header-nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 14px;
+        }
+        .header-nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* Footer Styles */
+        .chase-footer {
+            background-color: #f1f1f1;
+            padding: 20px;
+            text-align: center;
+            font-size: 0.9rem;
+            margin-top: 50px;
+            border-top: 1px solid #dee2e6;
+        }
+
+        .chase-footer a {
+            color: #0070c9;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        .chase-footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Statements & Documents Page Styles */
+        .statements-container {
+            background-color: white;
+            border: 1px solid #dee2e6;
+            border-radius: 5px;
+            padding: 20px;
+            max-width: 800px;
+            margin: 50px auto;
+        }
+
+        .statements-header {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .statements-list {
+            margin-top: 20px;
+        }
+
+        .statement-item {
+            padding: 15px;
+            border-bottom: 1px solid #dee2e6;
+            cursor: pointer;
+        }
+
+        .statement-item:last-child {
+            border-bottom: none;
+        }
+
+        .statement-item:hover {
+            background-color: #f1f1f1;
+        }
+
+        .statement-details {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .statement-date {
+            font-weight: bold;
+            color: #0070c9;
+        }
+
+        .statement-download {
+            color: #0070c9;
+            cursor: pointer;
+            font-size: 0.9rem;
+        }
+
+        .statement-download:hover {
+            text-decoration: underline;
+        }
+
+        /* Search Bar */
+        .search-statements {
+            margin-top: 20px;
+            position: relative;
+        }
+
+        .search-statements input {
+            padding-left: 40px;
+        }
+
+        .search-icon {
+            position: absolute;
+            left: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 1.2rem;
+            color: #6c757d;
+            
+        }
+
+         /* Unavailable Service Notice */
+         .unavailable-notice {
+            background-color: #fff3cd;
+            border: 1px solid #ffeeba;
+            color: #856404;
+            padding: 15px;
+            border-radius: 5px;
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <img src="https://www.chase.com/etc/designs/chase-ux/css/images/logo-chase.svg" alt="Chase Logo">
+        <nav class="header-nav">
+            <a href="Home.html">Account Overview</a>
+            <a href="transactionhistory.html">Transaction History</a>
+            <a href="Accountsettings.html">Account Settings</a>
+            <a href="billpay.html">Bill Pay</a>
+            <a href="transfer.html">Transfer Money</a>
+            <a href="statement.html">Statements & Documents</a>
+            <a href="Customerservice.html">Customer Service</a>
+            <a href="Signin.html">Sign Out</a>
+        </nav>
+    </header>
+
+
+    <!-- Statements & Documents Container -->
+    <div class="statements-container">
+        <div class="statements-header">Statements & Documents</div>
+
+        <!-- Search Statements -->
+        <div class="search-statements">
+            <i class="fas fa-search search-icon"></i>
+            <input type="text" class="form-control" placeholder="Search documents">
+        </div>
+
+        <!-- Statements List -->
+        <div class="statements-list">
+            <!-- Repeat this block for each month from January 2021 to January 2024 -->
+            <!-- January 2024 -->
+            <div class="statement-item">
+                <div class="statement-details">
+                    <span>January 2024 Statement</span>
+                    <span class="statement-date">01/31/2024</span>
+                </div>
+                <div>
+                    <span class="statement-download">Download PDF</span>
+                </div>
+            </div>
+            <!-- December 2023 -->
+            <div class="statement-item">
+                <div class="statement-details">
+                    <span>December 2023 Statement</span>
+                    <span class="statement-date">12/31/2023</span>
+                </div>
+                <div>
+                    <span class="statement-download">Download PDF</span>
+                </div>
+            </div>
+            <!-- November 2023 -->
+            <div class="statement-item">
+                <div class="statement-details">
+                    <span>November 2023 Statement</span>
+                    <span class="statement-date">11/30/2023</span>
+                </div>
+                <div>
+                    <span class="statement-download">Download PDF</span>
+                </div>
+            </div>
+            <!-- Add more statements for previous months -->
+            <!-- October 2023 -->
+            <div class="statement-item">
+                <div class="statement-details">
+                    <span>October 2023 Statement</span>
+                    <span class="statement-date">10/31/2023</span>
+                </div>
+                <div>
+                    <span class="statement-download">Download PDF</span>
+                </div>
+            </div>
+            <!-- September 2023 -->
+            <div class="statement-item">
+                <div class="statement-details">
+                    <span>September 2023 Statement</span>
+                    <span class="statement-date">09/30/2023</span>
+                </div>
+                <div>
+                    <span class="statement-download">Download PDF</span>
+                </div>
+            </div>
+            <!-- August 2023 -->
+            <div class="statement-item">
+                <div class="statement-details">
+                    <span>August 2023 Statement</span>
+                    <span class="statement-date">08/31/2023</span>
+                </div>
+                <div>
+                    <span class="statement-download">Download PDF</span>
+                </div>
+            </div>
+            <!-- July 2023 -->
+            <div class="statement-item">
+                <div class="statement-details">
+                    <span>July 2023 Statement</span>
+                    <span class="statement-date">07/31/2023</span>
+                </div>
+                <div>
+                    <span class="statement-download">Download PDF</span>
+                </div>
+            </div>
+            <!-- June 2023 -->
+            <div class="statement-item">
+                <div class="statement-details">
+                    <span>June 2023 Statement</span>
+                    <span class="statement-date">06/30/2023</span>
+                </div>
+                <div>
+                    <span class="statement-download">Download PDF</span>
+                </div>
+            </div>
+            <!-- May 2023 -->
+            <div class="statement-item">
+                <div class="statement-details">
+                    <span>May 2023 Statement</span>
+                    <span class="statement-date">05/31/2023</span>
+                </div>
+                <div>
+                    <span class="statement-download">Download PDF</span>
+                </div>
+            </div>
+            <!-- April 2023 -->
+            <div class="statement-item">
+                <div class="statement-details">
+                    <span>April 2023 Statement</span>
+                    <span class="statement-date">04/30/2023</span>
+                </div>
+                <div>
+                    <span class="statement-download">Download PDF</span>
+                </div>
+            </div>
+            <!-- March 2023 -->
+            <div class="statement-item">
+                <div class="statement-details">
+                    <span>March 2023 Statement</span>
+                    <span class="statement-date">03/31/2023</span>
+                </div>
+                <div>
+                    <span class="statement-download">Download PDF</span>
+                </div>
+            </div>
+            <!-- February 2023 -->
+            <div class="statement-item">
+                <div class="statement-details">
+                    <span>February 2023 Statement</span>
+                    <span class="statement-date">02/28/2023</span>
+                </div>
+                <div>
+                    <span class="statement-download">Download PDF</span>
+                </div>
+            </div>
+            <!-- January 2023 -->
+            <div class="statement-item">
+                <div class="statement-details">
+                    <span>January 2023 Statement</span>
+                    <span class="statement-date">01/31/2023</span>
+                </div>
+                <div>
+                    <span class="statement-download">Download PDF</span>
+                </div>
+            </div>
+            <!-- December 2022 -->
+            <div class="statement-item">
+                <div class="statement-details">
+                    <span>December 2022 Statement</span>
+                    <span class="statement-date">12/31/2022</span>
+                </div>
+                <div>
+                    <span class="statement-download">Download PDF</span>
+                </div>
+            </div>
+            <!-- November 2022 -->
+            <div class="statement-item">
+                <div class="statement-details">
+                    <span>November 2022 Statement</span>
+                    <span class="statement-date">11/30/2022</span>
+                </div>
+                <div>
+                    <span class="statement-download">Download PDF</span>
+                </div>
+            </div>
+            <!-- October 2022 -->
+            <div class="statement-item">
+                <div class="statement-details">
+                    <span>October 2022 Statement</span>
+                    <span class="statement-date">10/31/2022</span>
+                </div>
+                <div>
+                    <span class="statement-download">Download PDF</span>
+                </div>
+            </div>
+            <!-- September 2022 -->
+            <div class="statement-item">
+                <div class="statement-details">
+                    <span>September 2022 Statement</span>
+                    <span class="statement-date">09/30/2022</span>
+                </div>
+                <div>
+                    <span class="statement-download">Download PDF</span>
+                </div>
+            </div>
+            <!-- August 2022 -->
+            <div class="statement-item">
+                <div class="statement-details">
+                    <span>August 2022 Statement</span>
+                    <span class="statement-date">08/31/2022</span>
+                </div>
+                <div>
+                    <span class="statement-download">Download PDF</span>
+                </div>
+            </div>
+            <!-- July 2022 -->
+            <div class="statement-item">
+                <div class="statement-details">
+                    <span>July 2022 Statement</span>
+                    <span class="statement-date">07/31/2022</span>
+                </div>
+                <div>
+                    <span class="statement-download">Download PDF</span>
+                </div>
+            </div>
+            <!-- June 2022 -->
+            <div class="statement-item">
+                <div class="statement-details">
+                    <span>June 2022 Statement</span>
+                    <span class="statement-date">06/30/2022</span>
+                </div>
+                <div>
+                    <span class="statement-download">Download PDF</span>
+                </div>
+            </div>
+            <!-- May 2022 -->
+            <div class="statement-item">
+                <div class="statement-details">
+                    <span>May 2022 Statement</span>
+                    <span class="statement-date">05/31/2022</span>
+                </div>
+                <div>
+                    <span class="statement-download">Download PDF</span>
+                </div>
+            </div>
+            <!-- April 2022 -->
+            <div class="statement-item">
+                <div class="statement-details">
+                    <span>April 2022 Statement</span>
+                    <span class="statement-date">04/30/2022</span>
+                </div>
+                <div>
+                    <span class="statement-download">Download PDF</span>
+                </div>
+            </div>
+            <!-- March 2022 -->
+            <div class="statement-item">
+                <div class="statement-details">
+                    <span>March 2022 Statement</span>
+                    <span class="statement-date">03/31/2022</span>
+                </div>
+                <div>
+                    <span class="statement-download">Download PDF</span>
+                </div>
+            </div>
+            <!-- February 2022 -->
+            <div class="statement-item">
+                <div class="statement-details">
+                    <span>February 2022 Statement</span>
+                    <span class="statement-date">02/28/2022</span>
+                </div>
+                <div>
+                    <span class="statement-download">Download PDF</span>
+                </div>
+            </div>
+            <!-- January 2022 -->
+            <div class="statement-item">
+                <div class="statement-details">
+                    <span>January 2022 Statement</span>
+                    <span class="statement-date">01/31/2022</span>
+                </div>
+                <div>
+                    <span class="statement-download">Download PDF</span>
+                </div>
+            </div>
+            <!-- Add more months as needed -->
+        </div>
+    </div>
+
+                <!-- Unavailable Service Notice -->
+                <div class="unavailable-notice">
+                    Service currently unavailable. Please contact customer service for assistance.
+                </div>
+            </div>
+    
+
+    <!-- Chase Bank Footer -->
+    <footer class="chase-footer">
+        <p>&copy; 2024 JPMorgan Chase & Co. All rights reserved.</p>
+        <a href="#">Privacy</a> | <a href="#">Security</a> | <a href="#">Terms of Use</a> | <a href="#">Accessibility</a>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/js/all.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

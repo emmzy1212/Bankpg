@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Chase Bank</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .header {
+            background-color: #004b87;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: white;
+        }
+        .header img {
+            width: 120px;
+        }
+        .header-nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 14px;
+        }
+        .header-nav a:hover {
+            text-decoration: underline;
+        }
+        /* Hero Section */
+        .hero-section {
+            background-color: #f8f9fa;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .hero-section h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        .hero-section p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+        }
+
+        .btn-primary {
+            background-color: #0070c9;
+            border: none;
+        }
+
+        .btn-primary:hover {
+            background-color: #0056a0;
+        }
+
+        /* Features Section */
+        .features-section {
+            padding: 60px 20px;
+        }
+
+        .feature-item {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .feature-item img {
+            width: 80px;
+            margin-bottom: 15px;
+        }
+
+        .feature-item h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        .feature-item p {
+            font-size: 1rem;
+        }
+
+        /* Testimonials Section */
+        .testimonials-section {
+            background-color: #f8f9fa;
+            padding: 60px 20px;
+        }
+
+        .testimonial-item {
+            background-color: white;
+            border: 1px solid #dee2e6;
+            border-radius: 5px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        .testimonial-item h4 {
+            font-size: 1.25rem;
+            margin-bottom: 10px;
+        }
+
+        .testimonial-item p {
+            font-size: 1rem;
+        }
+
+        /* Contact Section */
+        .contact-section {
+            padding: 60px 20px;
+        }
+
+        .contact-form {
+            max-width: 600px;
+            margin: auto;
+        }
+
+        .contact-form .form-control {
+            margin-bottom: 15px;
+        }
+
+        /* Newsletter Section */
+        .newsletter-section {
+            background-color: #0033a0;
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .newsletter-section h2 {
+            font-size: 1.75rem;
+            margin-bottom: 20px;
+        }
+
+        .newsletter-section .form-control {
+            max-width: 500px;
+            margin: auto;
+        }
+
+        /* FAQ Section */
+        .faq-section {
+            padding: 60px 20px;
+        }
+
+        .faq-item {
+            margin-bottom: 20px;
+        }
+
+        .faq-item h4 {
+            font-size: 1.25rem;
+            cursor: pointer;
+        }
+
+        .faq-item p {
+            display: none;
+            font-size: 1rem;
+        }
+
+        .faq-item.active p {
+            display: block;
+        }
+
+        /* Footer Styles */
+        .chase-footer {
+            background-color: #f1f1f1;
+            padding: 20px;
+            text-align: center;
+            font-size: 0.9rem;
+            border-top: 1px solid #dee2e6;
+        }
+
+        .chase-footer a {
+            color: #0070c9;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        .chase-footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <img src="https://www.chase.com/etc/designs/chase-ux/css/images/logo-chase.svg" alt="Chase Logo">
+        <nav class="header-nav">
+            <a href="mainpage.html">Sign In</a>
+            <a href="/Customerservice.html">Customer Service</a>
+            <a href="#">Contact Us</a>
+            <a href="Signin.html">Signin</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <h1>Welcome to Chase Bank</h1>
+            <p>Your trusted partner in managing your finances with ease and security.</p>
+            <a href="Signin.html" class="btn btn-primary">Get Started</a>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 feature-item">
+                    <img src="https://via.placeholder.com/80" alt="Feature 1">
+                    <h3>Easy Account Management</h3>
+                    <p>Access and manage your accounts from anywhere, anytime.</p>
+                </div>
+                <div class="col-md-4 feature-item">
+                    <img src="https://via.placeholder.com/80" alt="Feature 2">
+                    <h3>Secure Transactions</h3>
+                    <p>Rest assured with top-notch security features for all transactions.</p>
+                </div>
+                <div class="col-md-4 feature-item">
+                    <img src="https://via.placeholder.com/80" alt="Feature 3">
+                    <h3>24/7 Customer Support</h3>
+                    <p>Get help whenever you need it with our dedicated support team.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section">
+        <div class="container">
+            <h2 class="text-center">What Our Customers Say</h2>
+            <div class="row">
+                <div class="col-md-4 testimonial-item">
+                    <h4>William smith</h4>
+                    <p>"Chase Bank has transformed the way I manage my finances. The online platform is user-friendly and secure."</p>
+                </div>
+                <div class="col-md-4 testimonial-item">
+                    <h4>Jane Andrew</h4>
+                    <p>"I love the 24/7 support and the ease of managing my account from anywhere. Highly recommend Chase Bank."</p>
+                </div>
+                <div class="col-md-4 testimonial-item">
+                    <h4>Emily Johnson</h4>
+                    <p>"The best banking experience I've had. The features are intuitive and the security is top-notch."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter-section">
+        <div class="container">
+            <h2>Stay Updated</h2>
+            <p>Subscribe to our newsletter to get the latest updates and offers.</p>
+            <form>
+                <input type="email" class="form-control" placeholder="Enter your email address">
+                <button type="submit" class="btn btn-light mt-3">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Chase Bank Footer -->
+    <footer class="chase-footer">
+        <p>
+            <a href="#">Privacy</a> | <a href="#">Security</a> | <a href="#">Terms of Use</a>
+        </p>
+        <p>© 2024 JPMorgan Chase & Co.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // FAQ Section Toggle
+        document.querySelectorAll('.faq-question').forEach((question) => {
+            question.addEventListener('click', () => {
+                const parent = question.parentElement;
+                parent.classList.toggle('active');
+            });
+        });
+    </script>
+</body>
+
+</html>
