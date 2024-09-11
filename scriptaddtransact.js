@@ -26,6 +26,7 @@ async function handleTransfer(event) {
         if (result.isConfirmed) {
             // Send the transaction data to the backend
             try {
+                
                 const response = await fetch('https://bankbackend-nine.vercel.app/api/addtransaction', {
                     method: 'POST',
                     headers: {
